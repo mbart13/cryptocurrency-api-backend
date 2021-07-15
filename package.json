@@ -1,0 +1,16 @@
+{
+  "name": "cryptocurrency-api-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "devDependencies": {
+    "vercel": "^23.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
