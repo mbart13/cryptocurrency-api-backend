@@ -19,7 +19,7 @@ const allowCors = (fn) => async (req, res) => {
 };
 
 const handler = (req, res) => {
-  const limit = req.query.limit;
+  const { limit } = req.query;
   let url = `https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=${limit}`;
 
   axios
