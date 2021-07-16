@@ -29,7 +29,10 @@ const handler = (req, res) => {
     })
     .catch((err) => {
       console.log(err.response.data);
-      res.send(err.response.data);
+      const {
+        status: { error_code },
+      } = err.response.data;
+      res.status(error_code).send(err.response.data);
     });
 };
 
